@@ -14,7 +14,7 @@ public class ConsoleInput {
         do {
             replay=true;
             operation = scanner.next().charAt(0);
-            if (operation ==('+'|'-'|'*'|'/')) {
+            if (operation == '-' | operation == '/' | operation == '*' | operation ==  '+') {
                 replay = true;
             }
             else {
@@ -26,15 +26,27 @@ public class ConsoleInput {
     }
 
         public double getDouble(){
-        System.out.println("Введите число:");
-        double number;
-        if(scanner.hasNextDouble()){
-            number = scanner.nextDouble();
-        } else {
-            System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
-            scanner.next();
-            number = getDouble();
+            double number;
+
+
+        while (true) {
+            System.out.println("Введите число:");
+            String str = scanner.nextLine();
+            try {
+                number = Double.parseDouble(str);
+                break;
+            } catch (Exception e) {
+                System.out.println("Упс. Вы ввели не число. Попробуйте еще раз. ");
+            }
         }
-        return number;
+            return number;
+//        if(scanner.hasNextDouble()){
+//            number = scanner.nextDouble();
+//        } else {
+//            System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
+//            scanner.next();
+//            number = getDouble();
+//        }
+
     }
 }
