@@ -23,7 +23,7 @@ public class Calculator {
                 case '/':
                         arithmeticOperations.division(x, y);
                     break;
-            } throw new Exception("На 0 делить нельзя");
+            }
         }
     }
 
