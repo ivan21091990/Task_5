@@ -1,7 +1,7 @@
 package com.itProger;
 
 public class Calculator {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
         ConsoleInput consoleInput = new ConsoleInput();
@@ -23,7 +23,7 @@ public class Calculator {
                 case '/':
                         arithmeticOperations.division(x, y);
                     break;
-            }
+            } throw new Exception("На 0 делить нельзя");
         }
     }
 

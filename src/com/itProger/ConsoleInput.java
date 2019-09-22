@@ -28,7 +28,6 @@ public class ConsoleInput {
         public double getDouble(){
             double number;
 
-
         while (true) {
             System.out.println("Введите число:");
             String str = scanner.nextLine();

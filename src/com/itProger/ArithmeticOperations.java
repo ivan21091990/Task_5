@@ -14,14 +14,9 @@ public class ArithmeticOperations {
             System.out.printf(x + " * " + y + " = %.4f", (x * y));
         }
 
-        public void  division(double x, double y){
-                try {
-                        System.out.printf(x + " / " + y + " = %.4f", (x / y));
-                }catch (ArithmeticException e){
-                        System.out.println("Ошибка: " + e);
-                }
+        public void  division(double x, double y) throws Exception{System.out.printf(x + " / " + y + " = %.4f", (x / y));
+                throw new Exception("На 0 делить нельзя");
         }
-
 }
 
 
