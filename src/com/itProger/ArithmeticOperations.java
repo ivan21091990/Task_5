@@ -24,6 +24,6 @@ public class ArithmeticOperations {
             System.out.printf(x + " / " + y + " = %.4f", (x / y));
             return x/y;
         }
-}
+    }
 
 

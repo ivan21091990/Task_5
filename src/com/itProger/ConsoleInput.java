@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ConsoleInput {
     Scanner scanner = new Scanner(System.in);
     boolean replay;
+
     public  char getOperation(){
         char operation;
         System.out.println("Доступные операции: ");
@@ -39,13 +40,5 @@ public class ConsoleInput {
             }
         }
             return number;
-//        if(scanner.hasNextDouble()){
-//            number = scanner.nextDouble();
-//        } else {
-//            System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
-//            scanner.next();
-//            number = getDouble();
-//        }
-
     }
 }

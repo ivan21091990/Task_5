@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
 
 public class CalculatorTest {
 
-    @org.junit.Test
+    @Test
     public void addOperationCheck() {
         ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
         double result = arithmeticOperations.addition(12.122,15);
@@ -41,5 +41,4 @@ public class CalculatorTest {
         ArithmeticOperations calculator = new ArithmeticOperations();
         calculator.division(12.23,0);
     }
-
 }

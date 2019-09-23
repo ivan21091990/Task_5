@@ -1,7 +1,7 @@
 package com.itProger;
 
 public class Calculator {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
 
         ArithmeticOperations arithmeticOperations = new ArithmeticOperations();
         ConsoleInput consoleInput = new ConsoleInput();
