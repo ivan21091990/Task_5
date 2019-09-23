@@ -7,17 +7,22 @@ public class ArithmeticOperations {
             return x+y;
         }
 
-        public  void subtraction(double x, double y){
+        public double subtraction(double x, double y){
             System.out.printf(x + " - " + y + " = %.4f", (x - y));
+            return x-y;
         }
 
-        public  void multiplication(double x, double y){
+        public double multiplication(double x, double y){
             System.out.printf(x + " * " + y + " = %.4f", (x * y));
+            return x * y;
         }
 
-        public void  division(double x, double y) throws Exception{
+        public double division(double x, double y) throws IllegalArgumentException {
+            if (y == 0){
+                throw new IllegalArgumentException("На 0 делить нельзя");
+            }
             System.out.printf(x + " / " + y + " = %.4f", (x / y));
-                throw new Exception("На 0 делить нельзя");
+            return x/y;
         }
 }
 
